@@ -1,0 +1,750 @@
+  /*sass file
+
+  */
+
+
+
+  //Please help with last part making the last section video repsonsive---------->
+  //I had an ungly margin difference when the page is resized to 470px or less in the last part--->
+
+
+  * {
+      box-sizing: border-box;
+  }
+
+  body{
+    border-style: solid;
+    border-width: thick;
+    border-color: black;
+    //have to set body to minimize so the screen covers the longest elemet
+    //min-width: 1300px;
+  }
+
+  .flex_row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex_column{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .picture_margin{
+
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+  }
+
+  .testDiv {
+    width: 100%;
+    height: 220px;
+  }
+
+  .testDiv_padding{
+    //padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+
+  }
+
+  .testDiv_img{
+    width: 25%;
+    height: 40%;
+  }
+
+  .heading_main{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+  }
+
+  .mobile_nav{
+    @extend .flex_row;
+    justify-content: space-around;
+    width: 100%;
+    height: 64px;
+    //background-color: orange;
+  }
+
+
+  .nav_header {
+    //display: flex;
+    //flex-direction: row;
+    @extend .flex_row;
+    justify-content: space-between;
+    height: 64px;
+    //background-color: blue;
+
+    .logo_wrapper {
+      height: 70%;
+      margin-top: 10px;
+      margin-left: 24px;
+      width: 20%;
+      //display: flex;
+      //flex-direction: row;
+      @extend .flex_row;
+      //background-color: red;
+      justify-content: space-between;
+    }
+    h2 {
+      margin-top: 7px;
+      margin-right: 40px;
+
+    }
+    img{
+      margin-left: 10px;
+    }
+
+    .sign_in {
+      margin-top: 16px;
+      margin-right: 24px;
+      height: 70%;
+      width: 40%;
+      //background-color: red;
+      display: flex;
+      justify-content: space-between;
+
+   }
+
+   span{
+     margin-top: 8px;
+   }
+
+
+  }
+
+
+
+  .main_banner{
+
+    //display: flex;
+    //flex-direction: row;
+    @extend .flex_row;
+    justify-content: space-around;
+    width: 100%;
+
+    background-color: lightgray;
+
+    .banner_pic {
+      background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/banner.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 60%;
+      height: 30em;
+      /*margin-top: 32px;
+      margin-bottom: 32px;
+      margin-left: 24px;
+      margin-right: 24px;*/
+      @extend .picture_margin;
+    }
+
+      .banner_text {
+        //display: flex;
+        //flex-direction: column;
+        @extend .flex_column;
+        justify-content: center;
+        //background-color: green;
+        width: 40%;
+        height: 30em;
+        margin-right: 100px;
+        margin-top: 32px;
+
+         h1{
+           font-weight: bold;
+         }
+         h3{
+           color: white;
+           padding-top: 8px;
+           padding-bottom: 8px;
+           background-color: black;
+           width: 50%;
+           text-align: center;
+         }
+
+      }
+
+
+  }
+
+  .main_second{
+
+    @extend .flex_row;
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 32px;
+    //background-color: blue;
+    //height: 40em;
+
+    .main_picture_wrapper {
+      @extend .flex_column;
+
+      width: 55%;
+      margin-right: 5px;
+      justify-content: flex-start;
+      //background-color: red;
+
+    }
+
+    .main_pic {
+      background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/information-main.jpg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 90%;
+      height: 25em;
+      /*margin-top: 32px;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin-bottom: 32px;
+      */
+      @extend .picture_margin;
+    }
+
+    h1 {
+      font-weight: bold;
+      margin-top: 0;
+      margin-left: 24px;
+    }
+
+    p {
+      margin-top: 24px;
+      margin-left: 24px;
+      width: 75%;
+    }
+
+    h3{
+      margin-left: 24px;
+
+    }
+
+    .second_wrapper {
+
+      width: 45%;
+      height: 800px;
+      //background-color: orange;
+      margin-top: 32px;
+
+      .test_div_1{
+        @extend .testDiv;
+        @extend .flex_row;
+        justify-content: flex-start;
+        //background-color: aqua;
+        @extend .testDiv_padding;
+        /*padding-top: 16px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        padding-right: 16px;
+        */
+
+        .test_div_1 img{
+          /*width: 25%;
+          height: 40%;
+          */
+          @extend .testDiv_img;
+
+        }
+
+         .text_area {
+          width: 65%;
+          margin-top: 16px;
+          margin-left: 32px;
+
+
+        }
+        h2, h4{
+          margin-left: 0;
+        }
+
+
+
+
+      }
+
+
+
+      .test_div_2{
+        @extend .testDiv;
+        @extend .flex_row;
+        @extend .testDiv_padding;
+        //background-color: yellow;
+
+        .test_div_2 img{
+          @extend .testDiv_img;
+        }
+
+        .text_area {
+         width: 65%;
+         margin-top: 16px;
+         margin-left: 32px;
+
+
+       }
+       h2, h4{
+         margin-left: 0;
+       }
+
+
+
+
+
+
+      }
+
+
+      .test_div_3 {
+        @extend .testDiv;
+        @extend .flex_row;
+        @extend .testDiv_padding;
+        //background-color: lightgray;
+
+
+        .test_div_3 img{
+          @extend .testDiv_img;
+        }
+
+        .text_area {
+         width: 65%;
+         margin-top: 16px;
+         margin-left: 32px;
+
+
+       }
+       h2, h4{
+         margin-left: 0;
+       }
+
+
+    }
+
+  }
+
+  }
+
+  .main_courses {
+    width: 100%;
+    background-color: lightgray;
+    //height: 1000px;
+
+    h1 {
+      /*margin-top: 32px;
+      margin-bottom: 32px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      text-align: center;*/
+      //background-color: orange;
+      @extend .heading_main;
+    }
+
+    .six_courses {
+      width: 80%;
+      height: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      flex-flow: row wrap;
+      //background-color: red;
+      div{
+        width: 30%;
+        height: 350px;
+        margin: 16px;
+        background-color: white;
+        @extend .flex_column;
+      }
+      img{
+        height:150px;
+        margin-bottom: 2px;
+      }
+      h2{
+        margin-left: 16px;
+        font-family: Helvetica;
+      }
+      h3{
+        margin-left: 16px;
+        font-size: 1em;
+        margin-top: 3px;
+        text-align: left;
+      }
+    }
+
+
+
+
+
+  }
+
+  .simple_six{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+
+
+    div{
+      margin:auto;
+      width: 90%;
+      text-align: left;
+      //padding-top: 16px;
+      //padding-bottom: 24px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: white;
+      background-color: lightgray;
+      height: 50px;
+    }
+    h3{
+      margin-left: 15px;
+    }
+  }
+
+
+
+  .thesis_wrapper{
+    width: 100%;
+    //height: 800px;
+    //background-color: lightgray;
+
+
+
+    h1{
+      @extend .heading_main;
+      //background-color: red;
+    }
+
+    .thesis_flex_wrapper{
+      @extend .flex_row;
+      justify-content: flex-start;
+      width: 100%;
+      //background-color: red;
+      height: 800px;
+
+      .thesis_video{
+        width: 54%;
+        height: 43em;
+
+        margin-left: 24px;
+        //background-color: blue;
+
+      }
+      video{
+        width: 100%;
+        height: 64%;
+
+      }
+      h2,p{
+        font-family: Helvetica;
+        margin-left: 24px;
+      }
+
+      .thesis_info{
+        width: 46%;
+        height: 30em;
+        margin: 24px;
+        //background-color: Cadetblue;
+
+        .thesis_first{
+          @extend .testDiv;
+          @extend .flex_row;
+          @extend .testDiv_padding;
+          background-color: lightgray;
+        }
+         img{
+           margin-top: 16px;
+          width: 35%;
+        }
+        .text_area {
+         width: 65%;
+         margin-top: 16px;
+         margin-left: 32px;
+         //background-color: yellow;
+          }
+          h2,h4{
+            margin-left: 0;
+          }
+
+         .thesis_second{
+           @extend .testDiv;
+           @extend .flex_row;
+           @extend .testDiv_padding;
+           //background-color: orange;
+         }
+
+         img {
+           margin-top: 16px;
+           width: 35%;
+         }
+
+         .text_area {
+          width: 65%;
+          margin-top: 16px;
+          margin-left: 32px;
+          //background-color: yellow;
+           }
+           h2,h4{
+             margin-left: 0;
+           }
+
+
+
+
+
+      }
+    }
+
+  }
+
+
+  .footer{
+    border-top: 2px solid black;
+
+    @extend .flex_row;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    //background-color: red;
+
+    .copyright{
+      margin-top: 16px;
+      margin-left: 24px;
+      min-width: 70px;
+      height: 100px;
+      //background-color: blue;
+    }
+
+    .term_privacy{
+      margin-top: 16px;
+      margin-left: 24px;
+      padding-left: 10px;
+      width: 15%;
+      height: 100px;
+      //background-color:orange;
+    }
+  }
+
+
+
+
+
+
+/*************Media Query section***********************/
+
+@media only screen and (min-width: 470px) {
+  .mobile_nav{
+    display: none;
+  }
+
+  .simple_six{
+    display: none;
+  }
+
+}
+
+
+@media only screen and (max-width: 470px) {
+
+  .nav_header{
+    display: none;
+  }
+  .main_banner{
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 84px;
+
+    .banner_pic{
+      width: 100%;
+      margin: 0;
+      height: 20rem;
+    }
+    .banner_text{
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      width: 100%;
+      height: auto;
+    }
+    h1{
+      text-align: center;
+    }
+    h2{
+      text-align: center;
+    }
+    h3{
+      background-color: gray;
+      color: white;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px;
+    }
+  }
+
+  .main_second{
+    flex-direction: column;
+    //justify-content: space-around;
+    height: 1000px;
+
+    .main_picture_wrapper{
+      display: none;
+    }
+
+    .second_wrapper{
+
+      width: 100%;
+      //margin-top: 80px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .test_div_1{
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 95px;
+
+
+        img{
+          width: 90%;
+          height: 200px;
+          margin: auto;
+          object-fit: fill;
+
+
+        }
+        .text_area{
+          margin-top:0;
+          padding: 0;
+          height: 250px;
+          margin-bottom: 75px;
+        }
+
+
+
+
+      } //test_div1 close bracket
+
+      .test_div_2{
+        padding:0;
+        margin-top: 60px;
+        margin-bottom: 74px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+
+
+      img{
+        width: 90%;
+        height: 200px;
+        margin: auto;
+        object-fit: fill;
+
+
+      }
+      .text_area{
+        margin-top:0;
+        padding: 0;
+        height: 200px;
+        margin-bottom: 145px;
+      }
+
+    } //testdiv2 close bracket
+
+    .test_div_3{
+      padding:0;
+      margin-top: 18px;
+      //margin-bottom: 64px;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-around;
+
+
+    img{
+      width: 90%;
+      height: 200px;
+      margin: auto;
+      object-fit: fill;
+
+
+    }
+    .text_area{
+      margin-top:0;
+      padding: 0;
+      height: 200px;
+    }
+
+  } //testdiv3 close bra
+
+
+
+
+  } //second_wrapper close bracket
+
+
+} //main_second close bracket
+
+  .main_courses{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+    .six_courses{
+      display: none;
+    }
+
+
+
+
+
+
+
+  }//main_courses close bracket
+
+
+  .thesis_flex_wrapper{
+     max-width: 100%;
+     max-height: 300px;
+     justify-content: center;
+
+    .thesis_video{
+      max-height: 300px;
+      text-align: center;
+    }
+
+
+    h2,p{
+      display: none;
+    }
+  }
+
+
+
+
+
+
+
+
+ .thesis_info {
+   display: none;
+ }
+
+ .footer {
+   height: 100px
+ }
+
+
+.term_privacy{
+  display: none;
+}
+
+
+
+}//end media query <470px

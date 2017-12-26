@@ -1,0 +1,409 @@
+  /*sass file
+
+  */
+
+
+  /*Please help with last part making the last section video repsonsive---------->
+  <!---I had an ungly margin difference when the page is resized to 470px or less in the last part--->*/
+
+
+
+* {
+  box-sizing: border-box; }
+
+body {
+  border-style: solid;
+  border-width: thick;
+  border-color: black; }
+
+.flex_row, .mobile_nav, .nav_header, .nav_header .logo_wrapper, .main_banner, .main_second, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second, .footer {
+  display: flex;
+  flex-direction: row; }
+
+.flex_column, .main_banner .banner_text, .main_second .main_picture_wrapper, .main_courses .six_courses div {
+  display: flex;
+  flex-direction: column; }
+
+.picture_margin, .main_banner .banner_pic, .main_second .main_pic {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 24px;
+  margin-right: 24px; }
+
+.testDiv, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second {
+  width: 100%;
+  height: 220px; }
+
+.testDiv_padding, .main_second .second_wrapper .test_div_1, .main_second .second_wrapper .test_div_2, .main_second .second_wrapper .test_div_3, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first, .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_second {
+  padding-left: 16px;
+  padding-bottom: 16px;
+  padding-right: 16px; }
+
+.testDiv_img, .main_second .second_wrapper .test_div_1 .test_div_1 img, .main_second .second_wrapper .test_div_2 .test_div_2 img, .main_second .second_wrapper .test_div_3 .test_div_3 img {
+  width: 25%;
+  height: 40%; }
+
+.heading_main, .main_courses h1, .thesis_wrapper h1 {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center; }
+
+.mobile_nav {
+  justify-content: space-around;
+  width: 100%;
+  height: 64px; }
+
+.nav_header {
+  justify-content: space-between;
+  height: 64px; }
+  .nav_header .logo_wrapper {
+    height: 70%;
+    margin-top: 10px;
+    margin-left: 24px;
+    width: 20%;
+    justify-content: space-between; }
+  .nav_header h2 {
+    margin-top: 7px;
+    margin-right: 40px; }
+  .nav_header img {
+    margin-left: 10px; }
+  .nav_header .sign_in {
+    margin-top: 16px;
+    margin-right: 24px;
+    height: 70%;
+    width: 40%;
+    display: flex;
+    justify-content: space-between; }
+  .nav_header span {
+    margin-top: 8px; }
+
+.main_banner {
+  justify-content: space-around;
+  width: 100%;
+  background-color: lightgray; }
+  .main_banner .banner_pic {
+    background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/banner.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 60%;
+    height: 30em;
+    /*margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: 24px;
+    margin-right: 24px;*/ }
+  .main_banner .banner_text {
+    justify-content: center;
+    width: 40%;
+    height: 30em;
+    margin-right: 100px;
+    margin-top: 32px; }
+    .main_banner .banner_text h1 {
+      font-weight: bold; }
+    .main_banner .banner_text h3 {
+      color: white;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      background-color: black;
+      width: 50%;
+      text-align: center; }
+
+.main_second {
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 32px; }
+  .main_second .main_picture_wrapper {
+    width: 55%;
+    margin-right: 5px;
+    justify-content: flex-start; }
+  .main_second .main_pic {
+    background-image: url("/home/jinkazama/FFend_local_projects/Colmer_Academy/resources/information-main.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 90%;
+    height: 25em;
+    /*margin-top: 32px;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 32px;
+    */ }
+  .main_second h1 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-left: 24px; }
+  .main_second p {
+    margin-top: 24px;
+    margin-left: 24px;
+    width: 75%; }
+  .main_second h3 {
+    margin-left: 24px; }
+  .main_second .second_wrapper {
+    width: 45%;
+    height: 800px;
+    margin-top: 32px; }
+    .main_second .second_wrapper .test_div_1 {
+      justify-content: flex-start;
+      /*padding-top: 16px;
+      padding-left: 16px;
+      padding-bottom: 16px;
+      padding-right: 16px;
+      */ }
+      .main_second .second_wrapper .test_div_1 .test_div_1 img {
+        /*width: 25%;
+        height: 40%;
+        */ }
+      .main_second .second_wrapper .test_div_1 .text_area {
+        width: 65%;
+        margin-top: 16px;
+        margin-left: 32px; }
+      .main_second .second_wrapper .test_div_1 h2, .main_second .second_wrapper .test_div_1 h4 {
+        margin-left: 0; }
+    .main_second .second_wrapper .test_div_2 .text_area {
+      width: 65%;
+      margin-top: 16px;
+      margin-left: 32px; }
+    .main_second .second_wrapper .test_div_2 h2, .main_second .second_wrapper .test_div_2 h4 {
+      margin-left: 0; }
+    .main_second .second_wrapper .test_div_3 .text_area {
+      width: 65%;
+      margin-top: 16px;
+      margin-left: 32px; }
+    .main_second .second_wrapper .test_div_3 h2, .main_second .second_wrapper .test_div_3 h4 {
+      margin-left: 0; }
+
+.main_courses {
+  width: 100%;
+  background-color: lightgray; }
+  .main_courses h1 {
+    /*margin-top: 32px;
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;*/ }
+  .main_courses .six_courses {
+    width: 80%;
+    height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap; }
+    .main_courses .six_courses div {
+      width: 30%;
+      height: 350px;
+      margin: 16px;
+      background-color: white; }
+    .main_courses .six_courses img {
+      height: 150px;
+      margin-bottom: 2px; }
+    .main_courses .six_courses h2 {
+      margin-left: 16px;
+      font-family: Helvetica; }
+    .main_courses .six_courses h3 {
+      margin-left: 16px;
+      font-size: 1em;
+      margin-top: 3px;
+      text-align: left; }
+
+.simple_six {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px; }
+  .simple_six div {
+    margin: auto;
+    width: 90%;
+    text-align: left;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    background-color: lightgray;
+    height: 50px; }
+  .simple_six h3 {
+    margin-left: 15px; }
+
+.thesis_wrapper {
+  width: 100%; }
+  .thesis_wrapper .thesis_flex_wrapper {
+    justify-content: flex-start;
+    width: 100%;
+    height: 800px; }
+    .thesis_wrapper .thesis_flex_wrapper .thesis_video {
+      width: 54%;
+      height: 43em;
+      margin-left: 24px; }
+    .thesis_wrapper .thesis_flex_wrapper video {
+      width: 100%;
+      height: 64%; }
+    .thesis_wrapper .thesis_flex_wrapper h2, .thesis_wrapper .thesis_flex_wrapper p {
+      font-family: Helvetica;
+      margin-left: 24px; }
+    .thesis_wrapper .thesis_flex_wrapper .thesis_info {
+      width: 46%;
+      height: 30em;
+      margin: 24px; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info .thesis_first {
+        background-color: lightgray; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info img {
+        margin-top: 16px;
+        width: 35%; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info .text_area {
+        width: 65%;
+        margin-top: 16px;
+        margin-left: 32px; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info h2, .thesis_wrapper .thesis_flex_wrapper .thesis_info h4 {
+        margin-left: 0; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info img {
+        margin-top: 16px;
+        width: 35%; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info .text_area {
+        width: 65%;
+        margin-top: 16px;
+        margin-left: 32px; }
+      .thesis_wrapper .thesis_flex_wrapper .thesis_info h2, .thesis_wrapper .thesis_flex_wrapper .thesis_info h4 {
+        margin-left: 0; }
+
+.footer {
+  border-top: 2px solid black;
+  justify-content: space-between;
+  width: 100%;
+  height: 150px; }
+  .footer .copyright {
+    margin-top: 16px;
+    margin-left: 24px;
+    min-width: 70px;
+    height: 100px; }
+  .footer .term_privacy {
+    margin-top: 16px;
+    margin-left: 24px;
+    padding-left: 10px;
+    width: 15%;
+    height: 100px; }
+
+/*************Media Query section***********************/
+@media only screen and (min-width: 470px) {
+  .mobile_nav {
+    display: none; }
+
+  .simple_six {
+    display: none; } }
+@media only screen and (max-width: 470px) {
+  .nav_header {
+    display: none; }
+
+  .main_banner {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 84px; }
+    .main_banner .banner_pic {
+      width: 100%;
+      margin: 0;
+      height: 20rem; }
+    .main_banner .banner_text {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 0;
+      width: 100%;
+      height: auto; }
+    .main_banner h1 {
+      text-align: center; }
+    .main_banner h2 {
+      text-align: center; }
+    .main_banner h3 {
+      background-color: gray;
+      color: white;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 32px; }
+
+  .main_second {
+    flex-direction: column;
+    height: 1000px; }
+    .main_second .main_picture_wrapper {
+      display: none; }
+    .main_second .second_wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .main_second .second_wrapper .test_div_1 {
+        padding: 0;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 95px; }
+        .main_second .second_wrapper .test_div_1 img {
+          width: 90%;
+          height: 200px;
+          margin: auto;
+          object-fit: fill; }
+        .main_second .second_wrapper .test_div_1 .text_area {
+          margin-top: 0;
+          padding: 0;
+          height: 250px;
+          margin-bottom: 75px; }
+      .main_second .second_wrapper .test_div_2 {
+        padding: 0;
+        margin-top: 60px;
+        margin-bottom: 74px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around; }
+        .main_second .second_wrapper .test_div_2 img {
+          width: 90%;
+          height: 200px;
+          margin: auto;
+          object-fit: fill; }
+        .main_second .second_wrapper .test_div_2 .text_area {
+          margin-top: 0;
+          padding: 0;
+          height: 200px;
+          margin-bottom: 145px; }
+      .main_second .second_wrapper .test_div_3 {
+        padding: 0;
+        margin-top: 18px;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-around; }
+        .main_second .second_wrapper .test_div_3 img {
+          width: 90%;
+          height: 200px;
+          margin: auto;
+          object-fit: fill; }
+        .main_second .second_wrapper .test_div_3 .text_area {
+          margin-top: 0;
+          padding: 0;
+          height: 200px; }
+
+  .main_courses {
+    display: flex;
+    flex-direction: column;
+    background-color: white; }
+    .main_courses .six_courses {
+      display: none; }
+
+  .thesis_flex_wrapper {
+    max-width: 100%;
+    max-height: 300px;
+    justify-content: center; }
+    .thesis_flex_wrapper .thesis_video {
+      max-height: 300px;
+      text-align: center; }
+    .thesis_flex_wrapper h2, .thesis_flex_wrapper p {
+      display: none; }
+
+  .thesis_info {
+    display: none; }
+
+  .footer {
+    height: 100px; }
+
+  .term_privacy {
+    display: none; } }
+
+/*# sourceMappingURL=style.css.map */
